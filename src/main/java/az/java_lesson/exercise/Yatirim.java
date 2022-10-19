@@ -8,7 +8,7 @@ public class Yatirim {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ilkin meblegi daxil edin:");
-        double mebleg = sc.nextDouble();
+        short mebleg = sc.nextShort();
         System.out.println("Faizi daxil edin:");
         double faiz = sc.nextDouble();
         System.out.println("Muddeti daxil edin:");
