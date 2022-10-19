@@ -8,19 +8,17 @@ public class Yatirim {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ilkin meblegi daxil edin:");
-        int m = sc.nextInt();
+        double mebleg = sc.nextDouble();
         System.out.println("Faizi daxil edin:");
-        int f = sc.nextInt();
+        double faiz = sc.nextDouble();
         System.out.println("Muddeti daxil edin:");
-        int i = sc.nextInt();
+        int il = sc.nextInt();
 
-        System.out.println("Netice : " + (m*(1+100)));
-
-    }
-//    public  static  int yatirim(int mebleg , int faiz ,int il){
-//        mebleg = mebleg*(1+(((il*faiz)/100)));
-//        return  mebleg;
-//    }
-
+        System.out.println("Netice : " + yatirim(mebleg,faiz,il));
 
     }
+
+    public static double yatirim(double mebleg, double faiz, int il) {
+        return mebleg*(Math.pow((1+faiz/100),il));
+    }
+}
